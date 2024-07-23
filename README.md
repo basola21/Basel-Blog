@@ -44,4 +44,4 @@ Your feedback and insights will be invaluable. Feel free to open issues or discu
 
 ## License
 
-This pro
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
