@@ -1,4 +1,4 @@
-# Basel Blog Project
+# My Blog Project
 
 ## Overview
 
@@ -6,7 +6,7 @@ I'm starting a new journey by building a website and blogging about it in public
 
 ## Progress So Far
 
-- **Design**: I have a design in mind from Figma and will implement it based on what fits and what I like.
+- **Design**: I have a design in mind from Figma and will implement it based on what fits and what I like. [Credit goes to the designer](<https://www.figma.com/design/oATMYkJ3mNPihlFYLsM1ng/The-Blog---A-Web-Personal-Blog-(Community)?node-id=614-1655&t=CLUTqiMDwUzGet79-1>).
 - **Front-End**:
   - Added a navigation bar.
   - Set up Redux.
