@@ -24,6 +24,9 @@ from django.utils.text import slugify
 class Category(models.Model):
     name = models.CharField(max_length=20)
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table = "Categories"
 
@@ -65,6 +68,9 @@ class Blog(models.Model):
         super(Blog, self).save(*args, **kwargs)
 
     manager = BlogManager()
+
+    def __str__(self):
+        return self.title
 
     class Meta:
         ordering = ("-created_on",)

@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
+import Blogs from "./components/Blogs";
 
 function App() {
   const theme = useSelector((state) => state.theme);
@@ -11,6 +12,7 @@ function App() {
     >
       <Navbar />
       <Title />
+      <Blogs />
     </div>
   );
 }
