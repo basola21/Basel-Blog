@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Card, CardContent, Typography, Chip, Stack } from "@mui/material";
 import { useSelector } from "react-redux";
 import CardMedia from "@mui/material/CardMedia";
+import { getCategoryColor } from "../utils/colorUtils";
 
 const BlogCard = ({ blog }) => {
   const theme = useSelector((state) => state.theme);
@@ -15,12 +16,7 @@ const BlogCard = ({ blog }) => {
         <Typography gutterBottom variant="h5" component="div">
           {blog.title}
         </Typography>
-        <Typography
-          variant="body2"
-          color={`${theme === "white" ? "gray" : "secondary.main"}`}
-          fontWeight="10"
-          gutterBottom
-        >
+        <Typography variant="body2" color="text.secondary" gutterBottom>
           {blog.sub_title}
         </Typography>
         {blog.categories && blog.categories.length > 0 && (
@@ -31,9 +27,8 @@ const BlogCard = ({ blog }) => {
                 label={category}
                 variant="outlined"
                 sx={{
-                  borderColor:
-                    theme === "white" ? "primary.main" : "secondary.main",
-                  color: theme === "white" ? "primary.main" : "secondary.main",
+                  borderColor: getCategoryColor(category),
+                  color: getCategoryColor(category),
                 }}
               />
             ))}
